@@ -1,0 +1,14 @@
+# IDE and build files
+.idea/
+target/
+*.iml
+
+# Log files
+*.log
+
+.env
+
+
+# IMPORTANT: Ignore the file with your secret API keys
+/src/main/resources/application.properties.template
+/src/main/resources/application.properties.Render

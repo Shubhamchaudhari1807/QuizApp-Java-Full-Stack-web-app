@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Users - Admin</title>
+    <link rel="stylesheet" href="/admin/admin.css">
+    <link rel="stylesheet" href="/admin/manage-users.css">
+</head>
+<body>
+<header class="admin-header">
+    <div class="header-content">
+        <h1><a href="/admin/admin-dashboard.html" class="header-link">Admin Dashboard</a> </h1>
+        <nav class="admin-nav">
+            <a href="/index.html" class="nav-link">View Main Site</a>
+            <form action="/logout" method="POST">
+                <button type="submit" class="logout-button">Logout</button>
+            </form>
+        </nav>
+    </div>
+</header>
+
+<main class="admin-container">
+    <div class="card">
+        <h4>All Registered Users</h4>
+        <div id="user-list-container">
+            <p>Loading users...</p>
+        </div>
+    </div>
+</main>
+
+<script src="/admin/manage-users.js"></script>
+</body>
+</html>

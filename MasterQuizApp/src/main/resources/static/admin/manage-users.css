@@ -1,0 +1,78 @@
+/* Styles specific to the Manage Users page */
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse; /* Removes space between table cells */
+    margin-top: 20px;
+    font-size: 0.95rem;
+    background-color: var(--card-bg); /* Use card background color from admin.css */
+}
+
+.user-table th, .user-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.user-table thead th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: var(--text-light);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.user-table tbody tr:hover {
+    background-color: #f1f3f5;
+}
+
+/* Styles for the role badges */
+.role-badge {
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    display: inline-block;
+}
+
+.role-user {
+    background-color: #6c757d; /* Grey for User */
+}
+
+.role-admin {
+    background-color: var(--primary-color); /* Blue for Admin */
+}
+
+/* Styles for the action buttons */
+.btn-promote, .btn-demote {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-promote {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.btn-promote:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.btn-demote {
+    background-color: #ffc107; /* Yellow/Orange */
+    color: #212529;
+}
+
+.btn-demote:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+}

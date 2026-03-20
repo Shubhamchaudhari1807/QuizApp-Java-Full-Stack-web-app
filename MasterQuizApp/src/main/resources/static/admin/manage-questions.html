@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Questions - Admin</title>
+    <!-- Links to the main admin style and the specific style for this page -->
+    <link rel="stylesheet" href="/admin/admin.css">
+    <link rel="stylesheet" href="/admin/manage-questions.css">
+</head>
+<body>
+<header class="admin-header">
+    <div class="header-content">
+        <h1><a href="/admin/admin-dashboard.html" class="header-link">Admin Dashboard</a></h1>
+        <nav class="admin-nav">
+            <a href="/index.html" class="nav-link">View Main Site</a>
+            <form action="/logout" method="POST">
+                <button type="submit" class="logout-button">Logout</button>
+            </form>
+        </nav>
+    </div>
+</header>
+
+<main class="admin-container">
+    <div class="card">
+        <h4>Add New Question to a Quiz</h4>
+        <form id="create-question-form" class="admin-form">
+            <div class="form-group">
+                <label for="quiz-select">First, Select an Existing Quiz</label>
+                <select id="quiz-select" required>
+                    <option value="">Loading quizzes...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="question-text">Question Text</label>
+                <textarea id="question-text" rows="3" required></textarea>
+            </div>
+
+            <h4>Options (Select the correct one)</h4>
+            <div class="option-entry">
+                <input type="radio" name="correct-option" value="0" required id="radio-0">
+                <label for="radio-0" class="radio-label"></label>
+                <input type="text" class="option-text" placeholder="Option 1" required>
+            </div>
+            <div class="option-entry">
+                <input type="radio" name="correct-option" value="1" required id="radio-1">
+                <label for="radio-1" class="radio-label"></label>
+                <input type="text" class="option-text" placeholder="Option 2" required>
+            </div>
+            <div class="option-entry">
+                <input type="radio" name="correct-option" value="2" required id="radio-2">
+                <label for="radio-2" class="radio-label"></label>
+                <input type="text" class="option-text" placeholder="Option 3" required>
+            </div>
+            <div class="option-entry">
+                <input type="radio" name="correct-option" value="3" required id="radio-3">
+                <label for="radio-3" class="radio-label"></label>
+                <input type="text" class="option-text" placeholder="Option 4" required>
+            </div>
+
+            <button type="submit" class="btn-primary">Add Question</button>
+        </form>
+    </div>
+</main>
+
+<script src="/admin/manage-questions.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="hamburger-menu" id="hamburger-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<div class="mobile-nav" id="mobile-nav">
+    <a href="#">Home</a>
+    <a href="#quiz-packages">Quiz</a>
+    <a href="#Performer">Top Performers</a>
+    <a href="#notes">Notes</a>
+    <a href="#" onclick="event.preventDefault(); document.querySelector('.desktop-nav form').submit();">Logout</a>
+</div>
+
+<section class="landing-page">
+    <div class="wrapper">
+        <div class="flex-content">
+            <h1 class="vacation-heading">Welcome To Master Quiz</h1>
+            <a href="#quiz-packages" class="btn">Start Now</a>
+        </div>
+    </div>
+</section>
+
+<nav class="main-nav">
+    <div class="desktop-nav">
+        <a href="#">Home</a>
+        <a href="#quiz-packages">Quiz</a>
+        <a href="#Performer">Top Performers</a>
+        <a href="#notes">Notes</a>
+        <form action="/logout" method="POST" style="display: inline;">
+            <button type="submit" class="logout-button">Logout</button>
+        </form>
+    </div>
+</nav>
+
+
+<section class="quiz-packages-section" id="quiz-packages">
+    <h1 class="quiz-heading">Coding Quiz</h1>
+    <p class="quiz-text">Ready to test your knowledge? Choose from our curated collection of coding quizzes designed to challenge your skills and deepen your understanding of popular programming languages. Each quiz features a variety of questions covering core concepts and advanced topics. Select a language below to begin!</p>
+    <div class="package-wrapper">
+    </div>
+</section>
+
+<section class="Performer-quiz-section" id="Performer">
+    <h1 class="quiz-heading">Top Performers</h1>
+    <p class="quiz-text">Our top performers are the brightest minds who have consistently excelled in our quizzes, showcasing their expertise and dedication. They represent the pinnacle of knowledge across various subjects like Java, Python, and more. With impressive scores, they set the benchmark for others to follow and inspire the entire community to strive for excellence.</p>
+    <div class="performer-grid">
+    </div>
+</section>
+
+<section class="notes-section" id="notes">
+    <h1 class="quiz-heading">Subject notes</h1>
+    <p class="quiz-text">Preparation is key to success. In this section, you'll find helpful study notes, key concept summaries, and quick reference guides for all our quiz subjects. Whether you need a refresher on Java syntax or want to review Python data structures, our notes are here to help you learn and achieve a top score.</p>
+    <div class="notes-div">
+        <a href="https://docs.oracle.com/en/java/javase/index.html" target="_blank" class="notes-link"><div class="notes-wrapper"><img src="./images/java.png" alt="Java Documentation"></div></a>
+        <a href="https://en.wikipedia.org/wiki/Compiler" target="_blank" class="notes-link"><div class="notes-wrapper"><img src="./images/compiler.png" alt="Compiler Information"></div></a>
+        <a href="https://spring.io/guides" target="_blank" class="notes-link"><div class="notes-wrapper"><img src="./images/spring.png" alt="Spring Framework Guides"></div></a>
+        <a href="https://react.dev/" target="_blank" class="notes-link"><div class="notes-wrapper"><img src="./images/react.png" alt="React Documentation"></div></a>
+        <a href="https://developer.mozilla.org/en-US/" target="_blank" class="notes-link"><div class="notes-wrapper"><img src="./images/dev.jpg" alt="MDN Web Docs"></div></a>
+        <a href="https://docs.python.org/3/" target="_blank" class="notes-link"><div class="notes-wrapper"><img src="./images/python.jpg" alt="Python Documentation"></div></a>
+    </div>
+</section>
+
+<footer class="footer-section">
+    <small>All Rights Reserved</small>
+    <small>Developed & Maintained By
+        <a href="https://www.linkedin.com/in/jayesh-desale-99533b273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Jayesh Desale</a>
+    </small>
+</footer>
+
+<script src="index.js"></script>
+
+</body>
+</html>

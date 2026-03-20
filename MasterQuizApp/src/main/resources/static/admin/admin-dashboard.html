@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - Master Quiz</title>
+    <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+<header class="admin-header">
+    <div class="header-content">
+        <h1><a href="/admin/admin-dashboard.html" class="header-link">Admin Dashboard</a></h1>
+        <nav class="admin-nav">
+            <a href="/index.html" class="nav-link">View Main Site</a>
+            <form action="/logout" method="POST">
+                <button type="submit" class="logout-button">Logout</button>
+            </form>
+        </nav>
+    </div>
+</header>
+
+<main class="admin-container">
+    <h2>Dashboard</h2>
+    <div class="section-grid">
+        <a href="/admin/manage-quizzes.html" class="section-card-link">
+            <div class="section-card">
+                <h4>Manage Quizzes</h4>
+                <p>Create, view, and delete quiz categories.</p>
+            </div>
+        </a>
+        <a href="/admin/manage-questions.html" class="section-card-link">
+            <div class="section-card">
+                <h4>Manage Questions</h4>
+                <p>Add new questions to your existing quizzes.</p>
+            </div>
+        </a>
+        <a href="/admin/generate-ai-questions.html" class="section-card-link">
+            <div class="section-card">
+                <h4>Generate with AI ✨</h4>
+                <p>Create new questions automatically using AI.</p>
+            </div>
+        </a>
+        <a href="/admin/manage-users.html" class="section-card-link">
+            <div class="section-card">
+                <h4>Manage Users</h4>
+                <p>View all registered users and promote or demote admins.</p>
+            </div>
+        </a>
+    </div>
+</main>
+</body>
+</html>

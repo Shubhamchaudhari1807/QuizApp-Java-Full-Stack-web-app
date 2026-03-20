@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Master Quiz</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <div class="auth-container">
+        <form action="/login" method="POST" class="auth-form">
+            <h2>Login to Your Account</h2>
+            <div id="error-message" class="error"></div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <p class="form-link">Don't have an account? <a href="register.html">Register here</a></p>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

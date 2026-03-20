@@ -1,0 +1,46 @@
+/* Styles specific to the Manage Questions page */
+
+.option-entry {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.option-entry .option-text {
+    flex-grow: 1; /* Makes the text input take up available space */
+}
+
+/* Custom Radio Button Styles */
+.option-entry input[type="radio"] {
+    display: none; /* Hide the default radio button */
+}
+
+.option-entry .radio-label {
+    width: 22px;  /* Slightly larger for better clicking */
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    flex-shrink: 0; /* Prevents the circle from squishing */
+    display: flex; /* ADDED: Enables flex centering */
+    justify-content: center; /* ADDED: Horizontally centers the dot */
+    align-items: center; /* ADDED: Vertically centers the dot */
+}
+
+.option-entry input[type="radio"]:checked + .radio-label {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+/* The small dot inside the checked radio button */
+.option-entry input[type="radio"]:checked + .radio-label::after {
+    content: '';
+    /* REMOVED position, top, left */
+    width: 8px; /* Slightly larger dot */
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
